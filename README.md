@@ -168,9 +168,16 @@ Parmi les élements à retenir, le ``` title ``` devrait :
 
 - avoir une longueur comprise entre 65 et 70 caractères, 
 - refléter le contenu de la page,
-- contenir les mots-clés importants. 
+- contenir les mots-clés importants,
+- être différent pour chaque page. 
 
 Le ``` <title> ``` devrait être placé sous la balise ``` <meta charset="utf-8"> ``` (Cf. [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) pour plus de détail sur l'ordre des balises ``` meta ```).
+
+Pour aller plus loin :
+
+- [À quoi servent les balises META ?](http://www.alsacreations.com/article/lire/628-balises-meta.html)
+- [Comment faire une bonne balise TITLE pour un bon référencement](http://www.webrankinfo.com/dossiers/debutants/balise-title)
+- [Comment bien optimiser sa balise title et meta description ?](http://www.eskimoz.fr/balise-title-meta-description/)
 
 
 ### JavaScript
