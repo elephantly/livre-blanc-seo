@@ -127,6 +127,13 @@ https://content-security-policy.com/
 ### Meta tags
 #### Alternate Lang
 
+Il peut être utile d’indiquer aux moteurs de recherche que votre page a une version traduite dispo en ligne. Cela se fait ainsi : ``` <link rel="alternate" hreflang="<ici le code langue>" href="<url>" /> ```
+(cela peut aussi se faire via entête HTTP, sitemap)
+
+C'est utile en cas de traduction complète, partielle (seulement le contenu et non l'interface), ou en cas de légères variations de contenus (ex: anglais vs américain, etc.).
+
+Source : https://support.google.com/webmasters/answer/189077?hl=en
+
 #### Author
 
 #### Canonical
