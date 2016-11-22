@@ -30,7 +30,7 @@ Fait avec :heart: pour toutes et tous
    * [Contenu](#contenu)
       * [Liens internes et externes](#liens-internes-et-externes)
       * [Ratio HTML / Texte](#ratio-html--texte)
-      * [Hierarchie de la page](#hierarchie-de-la-page)
+      * [Hiérarchie de la page](#hierarchie-de-la-page)
    * [Headers](#headers)
       * [CSP](#csp)
       * [STS](#sts)
@@ -72,7 +72,7 @@ Fait avec :heart: pour toutes et tous
    * [Indépendants](#indépendants)
 * [Le monde extérieur](#le-monde-extérieur)
    * [Backlinks](#backlinks)
-      * [Annauaires](#annauaires)
+      * [Annuaires](#annuaires)
    * [Réseaux sociaux](#réseaux-sociaux)
       * [Page facebook](#page-facebook)
       * [Compte Twitter](#compte-twitter)
@@ -89,38 +89,38 @@ Par exemple qu'il est préférable d'utiliser un .fr pour un site qui vise le ma
 
 Ce qu'il faut savoir sur avec ou sans www, les autres sous-domaines.
 
-Par défaut Google (qui des autres moteurs ?), considère que les domaines www.[unSite.uneTld] et [unSite.uneTld] doivent être des sites différents. Si vous n'avez pas prévu d'utiliser les deux sous-domaines en tant que sites indépendants, il est préférable d'en choisir un comme référence et de rediriger toutes URL de l'autre via 301 vers le premier.
+Par défaut Google (quid des autres moteurs ?), considère que les domaines www.[unSite.unTld] et [unSite.unTld] doivent être des sites différents. Si vous n'avez pas prévu d'utiliser les deux sous-domaines en tant que sites indépendants, il est préférable d'en choisir un comme référence et de rediriger toute URL de l'autre via 301 vers le premier.
 
 ### La requête
 
-Comment faire une URL proprement pour tout ce qui suit le domaine
+Comment faire une URL proprement pour tout ce qui suit le domaine ?
 
 #### Usage du / terminal
 
 ### Protocole HTTPS
 
-Quid de l'usage de HTTPS face à HTTP
+Quid de l'usage de HTTPS face à HTTP ?
 
 ### Protocole HTTP 2
 
-Quid de l'usage de HTTP 2
+Quid de l'usage de HTTP 2 ?
 
 ## Code
 
 Ce qu'il faut savoir côté code
 
 ### Contenu
-#### Hierarchie de la page
+#### Hiérarchie de la page
 #### Liens internes et externes
 #### Ratio HTML / Texte
 
 ### Headers
 
-Dans les en-têtes de vos pages, un certain nombre d'infos doivent être présentes. Surtout our une question de sécurité.
+Dans les en-têtes de vos pages, un certain nombre d'infos doivent être présentes. Surtout pour une question de sécurité.
 
 #### CSP
 
-Permet de réduire les risques d'attaques XSS. N'est pas un critère SEO chez Google mais on peut parier que des moteurs se préoccupant de la confidentialité soient intéressés par la présence de cette en-tête.
+Permet de réduire les risques d'attaque XSS. N'est pas un critère SEO chez Google mais on peut parier que des moteurs se préoccupant de la confidentialité soient intéressés par la présence de cette en-tête.
 
 Pour aller plus loin :
 
@@ -134,7 +134,7 @@ https://content-security-policy.com/
 Il peut être utile d’indiquer aux moteurs de recherche que votre page a une version traduite dispo en ligne. Cela se fait ainsi : ``` <link rel="alternate" hreflang="<ici le code langue>" href="<url>" /> ```
 (cela peut aussi se faire via entête HTTP, sitemap)
 
-C'est utile en cas de traduction complète, partielle (seulement le contenu et non l'interface), ou en cas de légères variations de contenus (ex: anglais vs américain, etc.).
+C'est utile en cas de traduction complète, partielle (seulement le contenu et non l'interface), ou en cas de légères variations de contenu (ex: anglais vs américain, etc.).
 
 Pour aller plus loin :
 
@@ -148,10 +148,10 @@ La balise ``` <link rel="canonical" href="contenu de référence" /> ``` permet 
 
 - un moteur de blog qui permet d'atteindre le même contenu depuis plusieurs URLs
 - la même page produit qui se retrouve dans des catégories/chemins/URLs différents
-- la même page produit possède des URL dynamiques en raison de la session utilisateur et / ou de la préférence de recherche
+- la même page produit qui possède des URLs dynamiques en raison de la session utilisateur et / ou de la préférence de recherche
 - etc.
 
-À noter, elle sert aussi en cas de simple rewriting, pour éviter de se faire pourrir ses adresses. Ex : un concurrent s'amuse à référencer votre billet ayant l'id 666 avec foo.com/vive_le_prOn_666 : l'adresse fonctionne, le rewriting aussi (mais il serait dommage d'être référencé ainsi, et de risquer en plus une pénalité de duplicate content). Toutefois, si vous avez mis un canonical vers foo.com/mon_bel_article_666 la vilaine tentative sera vaine. 
+À noter : elle sert aussi en cas de simple rewriting, pour éviter de se faire pourrir ses adresses. Ex : un concurrent s'amuse à référencer votre billet ayant l'id 666 avec foo.com/vive_le_prOn_666 : l'adresse fonctionne, le rewriting aussi (mais il serait dommage d'être référencé ainsi, et de risquer en plus une pénalité de duplicate content). Toutefois, si vous avez mis un canonical vers foo.com/mon_bel_article_666 la vilaine tentative sera vaine.
 
 Pour aller plus loin :
 
@@ -179,16 +179,16 @@ Vidéo de Matt Cutts [_"Is it necessary for every page to have a meta descriptio
 
 #### Title
 
-Bien qu'il ne s'agit pas à proprement parler d'une balise ``` meta ``` , la balise ``` title ``` permet de donnner un titre à la page. Bien qu'elle ne s'affiche pas dans le viewport, elle est utilisée notamment par les navigateurs pour donner un titre aux onglets et par les moteurs de recherche comme titre principal dans les résultats (SERP). C'est dire son importance et le soin qu'il faut lui apporter. 
+Bien qu'il ne s'agit pas à proprement parler d'une balise ``` meta ``` , la balise ``` title ``` permet de donnner un titre à la page. Bien qu'elle ne s'affiche pas dans le viewport, elle est utilisée notamment par les navigateurs pour donner un titre aux onglets et par les moteurs de recherche comme titre principal dans les résultats (SERP). C'est dire son importance et le soin qu'il faut lui apporter.
 
 Parmi les élements à retenir, le ``` title ``` devrait :
 
-- avoir une longueur comprise entre 65 et 70 caractères, 
+- avoir une longueur comprise entre 65 et 70 caractères,
 - refléter le contenu de la page,
 - contenir les mots-clés importants,
-- être différent pour chaque page. 
+- être différent pour chaque page.
 
-Le ``` <title> ``` devrait être placé sous la balise ``` <meta charset="utf-8"> ``` (Cf. [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) pour plus de détail sur l'ordre des balises ``` meta ```).
+Le ``` <title> ``` devrait être placé sous la balise ``` <meta charset="utf-8"> ``` (Cf. [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) pour plus de détails sur l'ordre des balises ``` meta ```).
 
 Pour aller plus loin :
 
@@ -205,9 +205,9 @@ Ce qui est compris ou non.
 
 La ligne de flottaison est la limite virtuelle entre la partie visible et non visible de la page à son affichage.
 
-Tout ce qui se situe au dessus de cette ligne doit être chargé en priorité. Comme dans beaucoup de choses, la première impression est la plus importante.
+Tout ce qui se situe au-dessus de cette ligne doit être chargé en priorité. Comme dans beaucoup de choses, la première impression est la plus importante.
 
-Au delà d'une question de rapidité ou de priorisation d'affichage, il faut savoir que près de 80% des utilisateurs ne vont pas voir en dessous de la ligne de flottaison. Les éléments les plus importants doivent donc se situer au dessus.
+Au delà d'une question de rapidité ou de priorisation d'affichage, il faut savoir que près de 80% des utilisateurs ne vont pas voir en dessous de la ligne de flottaison. Les éléments les plus importants doivent donc se situer au-dessus.
 
 Pour aller plus loin :
 
@@ -244,13 +244,13 @@ https://www.google.fr/intl/fr/analytics/
 https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/
 
 ####  Algorithmes Google
-Google a mis en place de nombreux algorithmes pour améliorer la qualité de ses résultats : amélioration des contenus, lutte contre le spam, gestion de la publicité, performances du site, etc. 
+Google a mis en place de nombreux algorithmes pour améliorer la qualité de ses résultats : amélioration des contenus, lutte contre le spam, gestion de la publicité, performances du site, etc.
 
 ##### PageRank
-Le PageRank est l'algorithme qui permet à Google de connaitre le nombre de liens qui pointent vers une page donnée. Plus il existe de liens vers cette page et plus la page est populaire. En gros, on peut dire que le PageRank indique la probabilité de tomber sur une page donnée en suivant des liens. Le nombre de liens vers une page est tempéré par la qualité et le classement des liens qui pointent vers elle.  
+Le PageRank est l'algorithme qui permet à Google de connaître le nombre de liens qui pointent vers une page donnée. Plus il existe de liens vers cette page et plus la page est populaire. En gros, on peut dire que le PageRank indique la probabilité de tomber sur une page donnée en suivant des liens. Le nombre de liens vers une page est tempéré par la qualité et le classement des liens qui pointent vers elle.
 
 ##### Pénalités
-A côté du PageRank, Google a mis en place une série de pénalités pour éviter que des pages de qualité douteuse ne "trustent" les premiers résultats. Cf. http://www.webrankinfo.com/dossiers/conseils/algos-google 
+A côté du PageRank, Google a mis en place une série de pénalités pour éviter que des pages de qualité douteuse ne "trustent" les premiers résultats. Cf. http://www.webrankinfo.com/dossiers/conseils/algos-google
 
 ###### Google Panda
 https://webmasters.googleblog.com/2011/05/more-guidance-on-building-high-quality.html
