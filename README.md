@@ -122,6 +122,8 @@ Dans les en-têtes de vos pages, un certain nombre d'infos doivent être présen
 
 Permet de réduire les risques d'attaques XSS. N'est pas un critère SEO chez Google mais on peut parier que des moteurs se préoccupant de la confidentialité soient intéressés par la présence de cette en-tête.
 
+Pour aller plus loin :
+
 https://content-security-policy.com/
 
 #### STS
@@ -133,6 +135,8 @@ Il peut être utile d’indiquer aux moteurs de recherche que votre page a une v
 (cela peut aussi se faire via entête HTTP, sitemap)
 
 C'est utile en cas de traduction complète, partielle (seulement le contenu et non l'interface), ou en cas de légères variations de contenus (ex: anglais vs américain, etc.).
+
+Pour aller plus loin :
 
 Source : https://support.google.com/webmasters/answer/189077?hl=en
 
@@ -149,6 +153,8 @@ La balise ``` <link rel="canonical" href="contenu de référence" /> ``` permet 
 
 À noter, elle sert aussi en cas de simple rewriting, pour éviter de se faire pourrir ses adresses. Ex : un concurrent s'amuse à référencer votre billet ayant l'id 666 avec foo.com/vive_le_prOn_666 : l'adresse fonctionne, le rewriting aussi (mais il serait dommage d'être référencé ainsi, et de risquer en plus une pénalité de duplicate content). Toutefois, si vous avez mis un canonical vers foo.com/mon_bel_article_666 la vilaine tentative sera vaine. 
 
+Pour aller plus loin :
+
 Source : https://support.google.com/webmasters/answer/139066?hl=en
 
 Vidéo de Matt Cutts [_"Canonical Link Element"_](https://www.youtube.com/watch?v=Cm9onOGTgeM)
@@ -158,6 +164,8 @@ Vidéo de Matt Cutts [_"Canonical Link Element"_](https://www.youtube.com/watch?
 La meta-description est un élément clé pour attirer vos visiteurs. En soit, elle ne compte pas pour le référencement. Cette description s'affiche dans les résultats Google. Au delà des 160 caractères, le reste ne s'affichera pas et est donc inutile. Autant ne pas alourdir votre page avec du contenu en trop.
 
 Pour chaque page, elle doit être unique et être comprise entre 150 et 160 caractères.
+
+Pour aller plus loin :
 
 Source : https://moz.com/learn/seo/meta-description
 
@@ -194,6 +202,16 @@ Pour aller plus loin :
 Ce qui est compris ou non.
 
 ### Ligne de flottaison
+
+La ligne de flottaison est la limite virtuelle entre la partie visible et non visible de la page à son affichage.
+
+Tout ce qui se situe au dessus de cette ligne doit être chargé en priorité. Comme dans beaucoup de choses, la première impression est la plus importante.
+
+Au delà d'une question de rapidité ou de priorisation d'affichage, il faut savoir que près de 80% des utilisateurs ne vont pas voir en dessous de la ligne de flottaison. Les éléments les plus importants doivent donc se situer au dessus.
+
+Pour aller plus loin :
+
+http://www.seonity.com/definition-la-ligne-de-flottaison.php
 
 ### Sitemaps
 
