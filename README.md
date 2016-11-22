@@ -15,7 +15,7 @@ PS : quoi qu'il en soit, d'avance : merci ! :thumbsup:
 
 Fait avec :heart: pour toutes et tous
 
-[![Public domain](http://i.creativecommons.org/p/mark/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/pdm/)
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Table des matières
 
