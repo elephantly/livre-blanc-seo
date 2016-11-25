@@ -111,6 +111,24 @@ Ce qu'il faut savoir côté code
 
 ### Contenu
 #### Hiérarchie de la page
+
+La hiérarchie de la page est définie comme dans tous documents, via ses "titres" : titre du document, titres des chapitres, titres des paragraphes etc en allant en décroissance d'importance.
+
+Côté HTML, la norme considère jusqu'à 6 niveaux de profondeur, allant de H1 à H6 ("H" pour "heading"). H1 étant le titre le plus important, H6, le plus bas niveau de profondeur pris en compte.
+
+La norme d'un point de vue SEO est d'avoir :
+- un seul et unique H1, logiquement, votre document n'est pas nommé de plusieurs façons
+- au moins un H2, parce que vous avez au moins un chapitre dans tout document
+
+Précisons au passage que logiquement, votre site ne contient idéalement pas de duplicate content, et donc intrinsèquement, tous les H1 de votre site se doivent d'être uniques.
+
+Pour aller plus loin :
+
+http://www.webrankinfo.com/dossiers/techniques/balises-h1-h2-h3
+
+Vidéo de Matt Cutts [_"More than one H1 on a page: good or bad?"_](https://www.youtube.com/watch?v=GIn5qJKU8VM)
+Il y explique que pour lui, en soit, ce n'est pas mauvais d'avoir plusieurs H1, mais que c'est dangereux parce que compromet la bonne compréhension de la structure de la page.
+
 #### Liens internes et externes
 #### Ratio HTML / Texte
 
