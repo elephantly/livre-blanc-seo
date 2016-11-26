@@ -1,6 +1,8 @@
 # livre-blanc-seo
 Ouvert à toutes les contributions. Partager ce qu'il faut savoir pour bien référencer un site.
 
+Pour une version plus agréable à lire, vous pouvez aller ici https://mathrobin.github.io/livre-blanc-seo
+
 :information_source: Pour contribuer, vous pouvez soit écrire du contenu, soit :
 - donner votre avis ;
 - râler ;
