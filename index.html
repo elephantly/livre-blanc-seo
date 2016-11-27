@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
 
-  <title></title>
+  <title>Livre Blanc SEO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Partager ce qu'il faut savoir pour bien référencer un site.">
   <meta name="author" content="MathRobin">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/milligram.min.css">
+  <link rel="stylesheet" href="css/whiteBook.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,281 +19,303 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>livre-blanc-seo</h1>
-
-        <p>Ouvert à toutes les contributions. Partager ce qu&#39;il faut savoir pour bien référencer un site.</p>
-
-        <p>:information_source: Pour contribuer, vous pouvez soit écrire du contenu, soit :
-        - donner votre avis ;
-        - râler ;
-        - applaudir ;
-        - remonter des erreurs ;
-        - parler de ce projet (ou écrire sur ce projet) ;
-        - corriger des fautes qu&#39;elles soient de français ou techniques, grossières ou non ;
-        - sûrement beaucoup d&#39;autres choses.
-        Quoi que vous fassiez, ça se passe par ici : https://github.com/MathRobin/livre-blanc-seo/issues</p>
-
-        <p>PS : quoi qu&#39;il en soit, d&#39;avance : merci ! :thumbsup:</p>
-
-        <p>Fait avec :heart: pour toutes et tous</p>
-
-        <p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://i.creativecommons.org/p/zero/1.0/88x31.png"/></a></p>
-
-        <h2>Table des matières</h2>
-
+    <nav id="menu" class="panel" role="navigation">
+        <h5>Table des matieres</h5>
         <ul><li><a href="#urls">URLs</a><ul><li><a href="#domaine-et-localisation">Domaine et localisation</a></li><li><a href="#sous-domaine">Sous domaine</a></li><li><a href="#la-requête">La requête</a><ul><li><a href="#usage-du--terminal">Usage du / terminal</a></li></ul></li><li><a href="#protocole-https">Protocole HTTPS</a></li><li><a href="#protocole-http-2">Protocole HTTP 2</a></li></ul></li><li><a href="#code">Code</a><ul><li><a href="#contenu">Contenu</a><ul><li><a href="#liens-internes-et-externes">Liens internes et externes</a></li><li><a href="#ratio-html--texte">Ratio HTML / Texte</a></li><li><a href="#hierarchie-de-la-page">Hiérarchie de la page</a></li></ul></li><li><a href="#headers">Headers</a><ul><li><a href="#csp">CSP</a></li><li><a href="#sts">STS</a></li></ul></li><li><a href="#meta-tags">Meta tags</a><ul><li><a href="#canonical">Canonical</a></li><li><a href="#description">Description</a></li><li><a href="#author">Author</a></li><li><a href="#opengraph">OpenGraph</a></li><li><a href="#twitter-cards">Twitter Cards</a></li><li><a href="#alternate-lang">Alternate Lang</a></li><li><a href="#publisher">Publisher</a></li><li><a href="#title">Title</a></li></ul></li><li><a href="#javascript">JavaScript</a></li><li><a href="#ligne-de-flottaison">Ligne de flottaison</a></li><li><a href="#sitemaps">Sitemaps</a></li><li><a href="#schema">Schema</a></li><li><a href="#amp">AMP</a></li><li><a href="#fia">FIA</a></li><li><a href="#favicons">Favicons</a><ul><li><a href="#apple-touch-icon">Apple Touch Icon</a></li><li><a href="#shortcut-icon">Shortcut icon</a></li><li><a href="#icon">Icon</a></li></ul></li></ul></li><li><a href="#outils">Outils</a><ul><li><a href="#google">Google</a><ul><li><a href="#google-search-console">Google Search Console</a></li><li><a href="#google-analytics">Google Analytics</a></li><li><a href="#embed-api">Embed API</a></li></ul></li></ul></li><li><a href="#algorithmes-google">Algorithmes Google</a><ul><li><a href="#pagerank">PageRank</a></li><li><a href="#pénalités">Pénalités</a></li><li><a href="#google-panda">Google Panda</a></li><li><a href="#google-penguin">Google Penguin</a></li><li><a href="#page-layout">Page Layout</a></li><li><a href="#payday-loan">PayDay Loan</a></li><li><a href="#bing">Bing</a><ul><li><a href="#bing-webmaster-tools">Bing Webmaster Tools</a></li></ul></li><li><a href="#mozilla">Mozilla</a><ul><li><a href="#mozilla-observatory">Mozilla Observatory</a></li></ul></li><li><a href="#indépendants">Indépendants</a></li></ul></li><li><a href="#le-monde-extérieur">Le monde extérieur</a><ul><li><a href="#backlinks">Backlinks</a><ul><li><a href="#annuaires">Annuaires</a></li></ul></li><li><a href="#réseaux-sociaux">Réseaux sociaux</a><ul><li><a href="#page-facebook">Page facebook</a></li><li><a href="#compte-twitter">Compte Twitter</a></li><li><a href="#instagram">Instagram</a></li><li><a href="#youtube">Youtube</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="push">
+        <header>
+            <a href="#menu" class="menu-link">&#9776;</a>
+            <h1>Livre Blanc SEO</h1>
+            <a class="github" href="https://github.com/MathRobin/livre-blanc-seo" title="Livre Blanc Seo sur Github" target="blank">
+                <svg width="80" height="80" viewBox="0 0 250 250" class="github">
+                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                </svg>
+            </a>
+        </header>
+        <div class="container">
+            <p>Ouvert à toutes les contributions. Partager ce qu&#39;il faut savoir pour bien référencer un site.</p>
 
-        <h2>URLs</h2>
+            <p>:information_source: Pour contribuer, vous pouvez soit écrire du contenu, soit :
+            - donner votre avis ;
+            - râler ;
+            - applaudir ;
+            - remonter des erreurs ;
+            - parler de ce projet (ou écrire sur ce projet) ;
+            - corriger des fautes qu&#39;elles soient de français ou techniques, grossières ou non ;
+            - sûrement beaucoup d&#39;autres choses.
+            Quoi que vous fassiez, ça se passe par ici : https://github.com/MathRobin/livre-blanc-seo/issues</p>
 
-        <h3>Domaine et localisation</h3>
+            <p>PS : quoi qu&#39;il en soit, d&#39;avance : merci ! :thumbsup:</p>
 
-        <p>Ici se situeront les conseils concernant le domaine à utiliser.</p>
+            <p>Fait avec :heart: pour toutes et tous</p>
 
-        <p>Par exemple qu&#39;il est préférable d&#39;utiliser un .fr pour un site qui vise le marché français et non un .com, plutôt destiné aux USA.</p>
+            <p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://i.creativecommons.org/p/zero/1.0/88x31.png"/></a></p>
 
-        <h3>Sous domaine</h3>
+            <h2 class="anchor" id="urls">URLs</h2>
 
-        <p>Ce qu&#39;il faut savoir sur avec ou sans www, les autres sous-domaines.</p>
+            <h3 class="anchor" id="domaine-et-localisation">Domaine et localisation</h3>
 
-        <p>Par défaut Google (quid des autres moteurs ?), considère que les domaines www.[unSite.unTld] et [unSite.unTld] doivent être des sites différents. Si vous n&#39;avez pas prévu d&#39;utiliser les deux sous-domaines en tant que sites indépendants, il est préférable d&#39;en choisir un comme référence et de rediriger toute URL de l&#39;autre via 301 vers le premier.</p>
+            <p>Ici se situeront les conseils concernant le domaine à utiliser.</p>
 
-        <h3>La requête</h3>
+            <p>Par exemple qu&#39;il est préférable d&#39;utiliser un .fr pour un site qui vise le marché français et non un .com, plutôt destiné aux USA.</p>
 
-        <p>Comment faire une URL proprement pour tout ce qui suit le domaine ?</p>
+            <h3 class="anchor" id="sous-domaine">Sous domaine</h3>
 
-        <h4>Usage du / terminal</h4>
+            <p>Ce qu&#39;il faut savoir sur avec ou sans www, les autres sous-domaines.</p>
 
-        <h3>Protocole HTTPS</h3>
+            <p>Par défaut Google (quid des autres moteurs ?), considère que les domaines www.[unSite.unTld] et [unSite.unTld] doivent être des sites différents. Si vous n&#39;avez pas prévu d&#39;utiliser les deux sous-domaines en tant que sites indépendants, il est préférable d&#39;en choisir un comme référence et de rediriger toute URL de l&#39;autre via 301 vers le premier.</p>
 
-        <p>Quid de l&#39;usage de HTTPS face à HTTP ?</p>
+            <h3 class="anchor" id="la-requete">La requête</h3>
 
-        <h3>Protocole HTTP 2</h3>
+            <p>Comment faire une URL proprement pour tout ce qui suit le domaine ?</p>
 
-        <p>Quid de l&#39;usage de HTTP 2 ?</p>
+            <h4 class="anchor" id="usage-du--terminal">Usage du / terminal</h4>
 
-        <h2>Code</h2>
+            <h3 class="anchor" id="protocole-https">Protocole HTTPS</h3>
 
-        <p>Ce qu&#39;il faut savoir côté code</p>
+            <p>Quid de l&#39;usage de HTTPS face à HTTP ?</p>
 
-        <h3>Contenu</h3>
+            <h3 class="anchor" id="protocole-http-2">Protocole HTTP 2</h3>
 
-        <h4>Hiérarchie de la page</h4>
+            <p>Quid de l&#39;usage de HTTP 2 ?</p>
 
-        <p>La hiérarchie de la page est définie comme dans tous documents, via ses &quot;titres&quot; : titre du document, titres des chapitres, titres des paragraphes etc en allant en décroissance d&#39;importance.</p>
+            <h2 class="anchor" id="code">Code</h2>
 
-        <p>Côté HTML, la norme considère jusqu&#39;à 6 niveaux de profondeur, allant de H1 à H6 (&quot;H&quot; pour &quot;heading&quot;). H1 étant le titre le plus important, H6, le plus bas niveau de profondeur pris en compte.</p>
+            <p>Ce qu&#39;il faut savoir côté code</p>
 
-        <p>La norme d&#39;un point de vue SEO est d&#39;avoir :
-        - un seul et unique H1, logiquement, votre document n&#39;est pas nommé de plusieurs façons
-        - au moins un H2, parce que vous avez au moins un chapitre dans tout document</p>
+            <h3 class="anchor" id="contenu">Contenu</h3>
 
-        <p>Précisons au passage que logiquement, votre site ne contient idéalement pas de duplicate content, et donc intrinsèquement, tous les H1 de votre site se doivent d&#39;être uniques.</p>
+            <h4 class="anchor" id="hierarchie-de-la-page">Hiérarchie de la page</h4>
 
-        <p>Pour aller plus loin :</p>
+            <p>La hiérarchie de la page est définie comme dans tous documents, via ses &quot;titres&quot; : titre du document, titres des chapitres, titres des paragraphes etc en allant en décroissance d&#39;importance.</p>
 
-        <p>http://www.webrankinfo.com/dossiers/techniques/balises-h1-h2-h3</p>
+            <p>Côté HTML, la norme considère jusqu&#39;à 6 niveaux de profondeur, allant de H1 à H6 (&quot;H&quot; pour &quot;heading&quot;). H1 étant le titre le plus important, H6, le plus bas niveau de profondeur pris en compte.</p>
 
-        <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=GIn5qJKU8VM"><em>&quot;More than one H1 on a page: good or bad?&quot;</em></a>
-        Il y explique que pour lui, en soit, ce n&#39;est pas mauvais d&#39;avoir plusieurs H1, mais que c&#39;est dangereux parce que compromet la bonne compréhension de la structure de la page.</p>
+            <p>La norme d&#39;un point de vue SEO est d&#39;avoir :
+            - un seul et unique H1, logiquement, votre document n&#39;est pas nommé de plusieurs façons
+            - au moins un H2, parce que vous avez au moins un chapitre dans tout document</p>
 
-        <h4>Liens internes et externes</h4>
+            <p>Précisons au passage que logiquement, votre site ne contient idéalement pas de duplicate content, et donc intrinsèquement, tous les H1 de votre site se doivent d&#39;être uniques.</p>
 
-        <h4>Ratio HTML / Texte</h4>
+            <p>Pour aller plus loin :</p>
 
-        <h3>Headers</h3>
+            <p>http://www.webrankinfo.com/dossiers/techniques/balises-h1-h2-h3</p>
 
-        <p>Dans les en-têtes de vos pages, un certain nombre d&#39;infos doivent être présentes. Surtout pour une question de sécurité.</p>
+            <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=GIn5qJKU8VM"><em>&quot;More than one H1 on a page: good or bad?&quot;</em></a>
+            Il y explique que pour lui, en soit, ce n&#39;est pas mauvais d&#39;avoir plusieurs H1, mais que c&#39;est dangereux parce que compromet la bonne compréhension de la structure de la page.</p>
 
-        <h4>CSP</h4>
+            <h4 class="anchor" id="liens-internes-et-externes">Liens internes et externes</h4>
 
-        <p>Permet de réduire les risques d&#39;attaque XSS. N&#39;est pas un critère SEO chez Google mais on peut parier que des moteurs se préoccupant de la confidentialité soient intéressés par la présence de cette en-tête.</p>
+            <h4 class="anchor" id="ratio-html--texte">Ratio HTML / Texte</h4>
 
-        <p>Pour aller plus loin :</p>
+            <h3 class="anchor" id="headers">Headers</h3>
 
-        <p>https://content-security-policy.com/</p>
+            <p>Dans les en-têtes de vos pages, un certain nombre d&#39;infos doivent être présentes. Surtout pour une question de sécurité.</p>
 
-        <h4>STS</h4>
+            <h4 class="anchor" id="csp">CSP</h4>
 
-        <h3>Meta tags</h3>
+            <p>Permet de réduire les risques d&#39;attaque XSS. N&#39;est pas un critère SEO chez Google mais on peut parier que des moteurs se préoccupant de la confidentialité soient intéressés par la présence de cette en-tête.</p>
 
-        <h4>Alternate Lang</h4>
+            <p>Pour aller plus loin :</p>
 
-        <p>Il peut être utile d’indiquer aux moteurs de recherche que votre page a une version traduite dispo en ligne. Cela se fait ainsi : <code> &lt;link rel=&quot;alternate&quot; hreflang=&quot;&lt;ici le code langue&gt;&quot; href=&quot;&lt;url&gt;&quot; /&gt; </code>
-        (cela peut aussi se faire via entête HTTP, sitemap)</p>
+            <p>https://content-security-policy.com/</p>
 
-        <p>C&#39;est utile en cas de traduction complète, partielle (seulement le contenu et non l&#39;interface), ou en cas de légères variations de contenu (ex: anglais vs américain, etc.).</p>
+            <h4 class="anchor" id="sts">STS</h4>
 
-        <p>Pour aller plus loin :</p>
+            <h3 class="anchor" id="meta-tags">Meta tags</h3>
 
-        <p>Source : https://support.google.com/webmasters/answer/189077?hl=en</p>
+            <h4 class="anchor" id="alternate-lang">Alternate Lang</h4>
 
-        <h4>Author</h4>
+            <p>Il peut être utile d’indiquer aux moteurs de recherche que votre page a une version traduite dispo en ligne. Cela se fait ainsi : <code> &lt;link rel=&quot;alternate&quot; hreflang=&quot;&lt;ici le code langue&gt;&quot; href=&quot;&lt;url&gt;&quot; /&gt; </code>
+            (cela peut aussi se faire via entête HTTP, sitemap)</p>
 
-        <h4>Canonical</h4>
+            <p>C&#39;est utile en cas de traduction complète, partielle (seulement le contenu et non l&#39;interface), ou en cas de légères variations de contenu (ex: anglais vs américain, etc.).</p>
 
-        <p>La balise <code> &lt;link rel=&quot;canonical&quot; href=&quot;contenu de référence&quot; /&gt; </code> permet d&#39;éviter de se faire taxer de &quot;duplicate content&quot; (contenu dupliqué : ce qui induit des pénalités sur le référencement). Elle sert à indiquer en cas de contenu dupliqué l&#39;adresse du contenu de référence. Typiquement, cela s&#39;applique si l&#39;on a :</p>
+            <p>Pour aller plus loin :</p>
 
-        <ul><li>un moteur de blog qui permet d&#39;atteindre le même contenu depuis plusieurs URLs</li><li>la même page produit qui se retrouve dans des catégories/chemins/URLs différents</li><li>la même page produit qui possède des URLs dynamiques en raison de la session utilisateur et / ou de la préférence de recherche</li><li>etc.</li></ul>
+            <p>Source : https://support.google.com/webmasters/answer/189077?hl=en</p>
 
-        <p>À noter : elle sert aussi en cas de simple rewriting, pour éviter de se faire pourrir ses adresses. Ex : un concurrent s&#39;amuse à référencer votre billet ayant l&#39;id 666 avec foo.com/vive<em>le</em>prOn<em>666 : l&#39;adresse fonctionne, le rewriting aussi (mais il serait dommage d&#39;être référencé ainsi, et de risquer en plus une pénalité de duplicate content). Toutefois, si vous avez mis un canonical vers foo.com/mon</em>bel<em>article</em>666 la vilaine tentative sera vaine.</p>
+            <h4 class="anchor" id="author">Author</h4>
 
-        <p>Pour aller plus loin :</p>
+            <h4 class="anchor" id="canonical">Canonical</h4>
 
-        <p>Source : https://support.google.com/webmasters/answer/139066?hl=en</p>
+            <p>La balise <code> &lt;link rel=&quot;canonical&quot; href=&quot;contenu de référence&quot; /&gt; </code> permet d&#39;éviter de se faire taxer de &quot;duplicate content&quot; (contenu dupliqué : ce qui induit des pénalités sur le référencement). Elle sert à indiquer en cas de contenu dupliqué l&#39;adresse du contenu de référence. Typiquement, cela s&#39;applique si l&#39;on a :</p>
 
-        <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=Cm9onOGTgeM"><em>&quot;Canonical Link Element&quot;</em></a></p>
+            <ul><li>un moteur de blog qui permet d&#39;atteindre le même contenu depuis plusieurs URLs</li><li>la même page produit qui se retrouve dans des catégories/chemins/URLs différents</li><li>la même page produit qui possède des URLs dynamiques en raison de la session utilisateur et / ou de la préférence de recherche</li><li>etc.</li></ul>
 
-        <h4>Meta-description</h4>
+            <p>À noter : elle sert aussi en cas de simple rewriting, pour éviter de se faire pourrir ses adresses. Ex : un concurrent s&#39;amuse à référencer votre billet ayant l&#39;id 666 avec foo.com/vive<em>le</em>prOn<em>666 : l&#39;adresse fonctionne, le rewriting aussi (mais il serait dommage d&#39;être référencé ainsi, et de risquer en plus une pénalité de duplicate content). Toutefois, si vous avez mis un canonical vers foo.com/mon</em>bel<em>article</em>666 la vilaine tentative sera vaine.</p>
 
-        <p>La meta-description est un élément clé pour attirer vos visiteurs. En soit, elle ne compte pas pour le référencement. Cette description s&#39;affiche dans les résultats Google. Au delà des 160 caractères, le reste ne s&#39;affichera pas et est donc inutile. Autant ne pas alourdir votre page avec du contenu en trop.</p>
+            <p>Pour aller plus loin :</p>
 
-        <p>Pour chaque page, elle doit être unique et être comprise entre 150 et 160 caractères.</p>
+            <p>Source : https://support.google.com/webmasters/answer/139066?hl=en</p>
 
-        <p>Pour aller plus loin :</p>
+            <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=Cm9onOGTgeM"><em>&quot;Canonical Link Element&quot;</em></a></p>
 
-        <p>Source : https://moz.com/learn/seo/meta-description</p>
+            <h4 class="anchor" id="meta-description">Meta-description</h4>
 
-        <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=W4gr88oHb-k"><em>&quot;Is it necessary for every page to have a meta description?&quot;</em></a></p>
+            <p>La meta-description est un élément clé pour attirer vos visiteurs. En soit, elle ne compte pas pour le référencement. Cette description s&#39;affiche dans les résultats Google. Au delà des 160 caractères, le reste ne s&#39;affichera pas et est donc inutile. Autant ne pas alourdir votre page avec du contenu en trop.</p>
 
-        <h4>OpenGraph</h4>
+            <p>Pour chaque page, elle doit être unique et être comprise entre 150 et 160 caractères.</p>
 
-        <h4>Publisher</h4>
+            <p>Pour aller plus loin :</p>
 
-        <h4>Twitter Cards</h4>
+            <p>Source : https://moz.com/learn/seo/meta-description</p>
 
-        <h4>Title</h4>
+            <p>Vidéo de Matt Cutts <a href="https://www.youtube.com/watch?v=W4gr88oHb-k"><em>&quot;Is it necessary for every page to have a meta description?&quot;</em></a></p>
 
-        <p>Bien qu&#39;il ne s&#39;agit pas à proprement parler d&#39;une balise <code> meta </code> , la balise <code> title </code> permet de donnner un titre à la page. Bien qu&#39;elle ne s&#39;affiche pas dans le viewport, elle est utilisée notamment par les navigateurs pour donner un titre aux onglets et par les moteurs de recherche comme titre principal dans les résultats (SERP). C&#39;est dire son importance et le soin qu&#39;il faut lui apporter.</p>
+            <h4 class="anchor" id="opengraph">OpenGraph</h4>
 
-        <p>Parmi les élements à retenir, le <code> title </code> devrait :</p>
+            <h4 class="anchor" id="publisher">Publisher</h4>
 
-        <ul><li>avoir une longueur comprise entre 65 et 70 caractères,</li><li>refléter le contenu de la page,</li><li>contenir les mots-clés importants,</li><li>être différent pour chaque page.</li></ul>
+            <h4 class="anchor" id="twitter-cards">Twitter Cards</h4>
 
-        <p>Le <code> &lt;title&gt; </code> devrait être placé sous la balise <code> &lt;meta charset=&quot;utf-8&quot;&gt; </code> (Cf. <a href="https://github.com/h5bp/html5-boilerplate">HTML5 Boilerplate</a> pour plus de détails sur l&#39;ordre des balises <code> meta </code>).</p>
+            <h4 class="anchor" id="title">Title</h4>
 
-        <p>Pour aller plus loin :</p>
+            <p>Bien qu&#39;il ne s&#39;agit pas à proprement parler d&#39;une balise <code> meta </code> , la balise <code> title </code> permet de donnner un titre à la page. Bien qu&#39;elle ne s&#39;affiche pas dans le viewport, elle est utilisée notamment par les navigateurs pour donner un titre aux onglets et par les moteurs de recherche comme titre principal dans les résultats (SERP). C&#39;est dire son importance et le soin qu&#39;il faut lui apporter.</p>
 
-        <ul><li><a href="http://www.alsacreations.com/article/lire/628-balises-meta.html">À quoi servent les balises META ?</a></li><li><a href="http://www.webrankinfo.com/dossiers/debutants/balise-title">Comment faire une bonne balise TITLE pour un bon référencement</a></li><li><a href="http://www.eskimoz.fr/balise-title-meta-description/">Comment bien optimiser sa balise title et meta description ?</a></li></ul>
+            <p>Parmi les élements à retenir, le <code> title </code> devrait :</p>
 
-        <h3>JavaScript</h3>
+            <ul><li>avoir une longueur comprise entre 65 et 70 caractères,</li><li>refléter le contenu de la page,</li><li>contenir les mots-clés importants,</li><li>être différent pour chaque page.</li></ul>
 
-        <p>Ce qui est compris ou non.</p>
+            <p>Le <code> &lt;title&gt; </code> devrait être placé sous la balise <code> &lt;meta charset=&quot;utf-8&quot;&gt; </code> (Cf. <a href="https://github.com/h5bp/html5-boilerplate">HTML5 Boilerplate</a> pour plus de détails sur l&#39;ordre des balises <code> meta </code>).</p>
 
-        <h3>Ligne de flottaison</h3>
+            <p>Pour aller plus loin :</p>
 
-        <p>La ligne de flottaison est la limite virtuelle entre la partie visible et non visible de la page à son affichage.</p>
+            <ul><li><a href="http://www.alsacreations.com/article/lire/628-balises-meta.html">À quoi servent les balises META ?</a></li><li><a href="http://www.webrankinfo.com/dossiers/debutants/balise-title">Comment faire une bonne balise TITLE pour un bon référencement</a></li><li><a href="http://www.eskimoz.fr/balise-title-meta-description/">Comment bien optimiser sa balise title et meta description ?</a></li></ul>
 
-        <p>Tout ce qui se situe au-dessus de cette ligne doit être chargé en priorité. Comme dans beaucoup de choses, la première impression est la plus importante.</p>
+            <h3 class="anchor" id="javascript">JavaScript</h3>
 
-        <p>Au delà d&#39;une question de rapidité ou de priorisation d&#39;affichage, il faut savoir que près de 80% des utilisateurs ne vont pas voir en dessous de la ligne de flottaison. Les éléments les plus importants doivent donc se situer au-dessus.</p>
+            <p>Ce qui est compris ou non.</p>
 
-        <p>Pour aller plus loin :</p>
+            <h3 class="anchor" id="ligne-de-flottaison">Ligne de flottaison</h3>
 
-        <p>http://www.seonity.com/definition-la-ligne-de-flottaison.php</p>
+            <p>La ligne de flottaison est la limite virtuelle entre la partie visible et non visible de la page à son affichage.</p>
 
-        <h3>Sitemaps</h3>
+            <p>Tout ce qui se situe au-dessus de cette ligne doit être chargé en priorité. Comme dans beaucoup de choses, la première impression est la plus importante.</p>
 
-        <p>Usage d&#39;un sitemap pour les pages indexables
-        Usage d&#39;un sitemap alternatif provisoire pour les redirections 301 et 302</p>
+            <p>Au delà d&#39;une question de rapidité ou de priorisation d&#39;affichage, il faut savoir que près de 80% des utilisateurs ne vont pas voir en dessous de la ligne de flottaison. Les éléments les plus importants doivent donc se situer au-dessus.</p>
 
-        <h3>Schema</h3>
+            <p>Pour aller plus loin :</p>
 
-        <p>https://schema.org/</p>
+            <p>http://www.seonity.com/definition-la-ligne-de-flottaison.php</p>
 
-        <h3>AMP</h3>
+            <h3 class="anchor" id="sitemaps">Sitemaps</h3>
 
-        <p>https://www.ampproject.org/</p>
+            <p>Usage d&#39;un sitemap pour les pages indexables
+            Usage d&#39;un sitemap alternatif provisoire pour les redirections 301 et 302</p>
 
-        <h3>FIA</h3>
+            <h3 class="anchor" id="schema">Schema</h3>
 
-        <p>https://instantarticles.fb.com/</p>
+            <p>https://schema.org/</p>
 
-        <h3>Favicons</h3>
+            <h3 class="anchor" id="amp">AMP</h3>
 
-        <h4>Apple Touch Icon</h4>
+            <p>https://www.ampproject.org/</p>
 
-        <h4>Shortcut icon</h4>
+            <h3 class="anchor" id="fia">FIA</h3>
 
-        <h4>Icon</h4>
+            <p>https://instantarticles.fb.com/</p>
 
-        <h2>Outils</h2>
+            <h3 class="anchor" id="favicons">Favicons</h3>
 
-        <h3>Google</h3>
+            <h4 class="anchor" id="apple-touch-icon">Apple Touch Icon</h4>
 
-        <h4>Google Search Console</h4>
+            <h4 class="anchor" id="shortcut-icon">Shortcut icon</h4>
 
-        <p>https://www.google.com/webmasters/tools/home</p>
+            <h4 class="anchor" id="icon">Icon</h4>
 
-        <h4>Google Analytics</h4>
+            <h2 class="anchor" id="outils">Outils</h2>
 
-        <p>https://www.google.fr/intl/fr/analytics/</p>
+            <h3 class="anchor" id="google">Google</h3>
 
-        <h4>Embed API</h4>
+            <h4 class="anchor" id="google-search-console">Google Search Console</h4>
 
-        <p>https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/</p>
+            <p>https://www.google.com/webmasters/tools/home</p>
 
-        <h4>Algorithmes Google</h4>
+            <h4 class="anchor" id="google-analytics">Google Analytics</h4>
 
-        <p>Google a mis en place de nombreux algorithmes pour améliorer la qualité de ses résultats : amélioration des contenus, lutte contre le spam, gestion de la publicité, performances du site, etc.</p>
+            <p>https://www.google.fr/intl/fr/analytics/</p>
 
-        <h5>PageRank</h5>
+            <h4 class="anchor" id="embed-api">Embed API</h4>
 
-        <p>Le PageRank est l&#39;algorithme qui permet à Google de connaître le nombre de liens qui pointent vers une page donnée. Plus il existe de liens vers cette page et plus la page est populaire. En gros, on peut dire que le PageRank indique la probabilité de tomber sur une page donnée en suivant des liens. Le nombre de liens vers une page est tempéré par la qualité et le classement des liens qui pointent vers elle.</p>
+            <p>https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/</p>
 
-        <h5>Pénalités</h5>
+            <h4 class="anchor" id="algorithmes-google">Algorithmes Google</h4>
 
-        <p>A côté du PageRank, Google a mis en place une série de pénalités pour éviter que des pages de qualité douteuse ne &quot;trustent&quot; les premiers résultats. Cf. http://www.webrankinfo.com/dossiers/conseils/algos-google</p>
+            <p>Google a mis en place de nombreux algorithmes pour améliorer la qualité de ses résultats : amélioration des contenus, lutte contre le spam, gestion de la publicité, performances du site, etc.</p>
 
-        <h6>Google Panda</h6>
+            <h5 class="anchor" id="pagerank">PageRank</h5>
 
-        <p>https://webmasters.googleblog.com/2011/05/more-guidance-on-building-high-quality.html</p>
+            <p>Le PageRank est l&#39;algorithme qui permet à Google de connaître le nombre de liens qui pointent vers une page donnée. Plus il existe de liens vers cette page et plus la page est populaire. En gros, on peut dire que le PageRank indique la probabilité de tomber sur une page donnée en suivant des liens. Le nombre de liens vers une page est tempéré par la qualité et le classement des liens qui pointent vers elle.</p>
 
-        <h6>Google Penguin</h6>
+            <h5 class="anchor" id="penalites">Pénalités</h5>
 
-        <p>https://webmasters.googleblog.com/2016/09/penguin-is-now-part-of-our-core.html</p>
+            <p>A côté du PageRank, Google a mis en place une série de pénalités pour éviter que des pages de qualité douteuse ne &quot;trustent&quot; les premiers résultats. Cf. http://www.webrankinfo.com/dossiers/conseils/algos-google</p>
 
-        <h6>Page Layout</h6>
+            <h6 class="anchor" id="google-panda">Google Panda</h6>
 
-        <p>Publicité envahissante
-        https://webmasters.googleblog.com/2012/01/page-layout-algorithm-improvement.html</p>
+            <p>https://webmasters.googleblog.com/2011/05/more-guidance-on-building-high-quality.html</p>
 
-        <h6>PayDay Loan</h6>
+            <h6 class="anchor" id="google-penguin">Google Penguin</h6>
 
-        <p>Antispam
-        http://searchengineland.com/google-pay-day-loan-algorithm-google-search-algorithm-update-to-target-spammy-queries-162941</p>
+            <p>https://webmasters.googleblog.com/2016/09/penguin-is-now-part-of-our-core.html</p>
 
-        <h3>Bing</h3>
+            <h6 class="anchor" id="page-layout">Page Layout</h6>
 
-        <h4>Bing Webmaster Tools</h4>
+            <p>Publicité envahissante
+            https://webmasters.googleblog.com/2012/01/page-layout-algorithm-improvement.html</p>
 
-        <p>http://www.bing.com/toolbox/webmaster</p>
+            <h6 class="anchor" id="payday-loan">PayDay Loan</h6>
 
-        <h3>Mozilla</h3>
+            <p>Antispam
+            http://searchengineland.com/google-pay-day-loan-algorithm-google-search-algorithm-update-to-target-spammy-queries-162941</p>
 
-        <h4>Mozilla Observatory</h4>
+            <h3 class="anchor" id="bing">Bing</h3>
 
-        <p>https://observatory.mozilla.org/</p>
+            <h4 class="anchor" id="bing-webmaster-tools">Bing Webmaster Tools</h4>
 
-        <h3>Indépendants</h3>
+            <p>http://www.bing.com/toolbox/webmaster</p>
 
-        <ul><li>onpage.org</li><li>woorank</li><li>https://www.seobility.net/en/</li></ul>
+            <h3 class="anchor" id="mozilla">Mozilla</h3>
 
-        <h2>Le monde extérieur</h2>
+            <h4 class="anchor" id="mozilla-observatory">Mozilla Observatory</h4>
 
-        <h3>Backlinks</h3>
+            <p>https://observatory.mozilla.org/</p>
 
-        <h4>Annuaires</h4>
+            <h3 class="anchor" id="independants">Indépendants</h3>
 
-        <h3>Réseaux sociaux</h3>
+            <ul><li>onpage.org</li><li>woorank</li><li>https://www.seobility.net/en/</li></ul>
 
-        <h4>Page facebook</h4>
+            <h2 class="anchor" id="le-monde-exterieur">Le monde extérieur</h2>
 
-        <h4>Compte Twitter</h4>
+            <h3 class="anchor" id="backlinks">Backlinks</h3>
 
-        <h4>Instagram</h4>
+            <h4 class="anchor" id="annuaires">Annuaires</h4>
 
-        <h4>Youtube</h4>
+            <h3 class="anchor" id="reseaux-sociaux">Réseaux sociaux</h3>
+
+            <h4 class="anchor" id="page-facebook">Page facebook</h4>
+
+            <h4 class="anchor" id="compte-twitter">Compte Twitter</h4>
+
+            <h4 class="anchor" id="instagram">Instagram</h4>
+
+            <h4 class="anchor" id="youtube">Youtube</h4>
+        </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide({
+            'easyClose': true
+        });
+    });
+    </script>
+    <script src="js/whiteBook.js"></script>
 </body>
 </html>
