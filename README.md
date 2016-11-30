@@ -308,3 +308,7 @@ https://observatory.mozilla.org/
 #### Compte Twitter
 #### Instagram
 #### Youtube
+
+## Liens externes
+ - [awesome-seo](https://github.com/teles/awesome-seo)
+ 
