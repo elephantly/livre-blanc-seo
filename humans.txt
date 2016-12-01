@@ -6,4 +6,5 @@
     Pontax https://github.com/Pontax
     pborreli https://github.com/pborreli
     startupz https://github.com/startupz
+    revolunet https://github.com/revolunet
     MathRobin https://github.com/MathRobin
