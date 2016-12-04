@@ -1,3 +1,8 @@
+code {
+  max-width: 100%;
+  overflow-x: scroll;
+  display: block;
+}
 .panel {
   background-color: #606c76;
   color: #ffffff;
@@ -20,6 +25,7 @@
   color: #dea9ff;
 }
 .push {
+  overflow: hidden;
   position: relative;
   margin-top: 10rem;
 }
